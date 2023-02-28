@@ -1,4 +1,4 @@
-# easy-ui
+# easy-ui-with-vue
 学习monorepo， 基于vue3 + vite4 + typescript4 组件库的搭建的ui库
 
 # 依赖安装
