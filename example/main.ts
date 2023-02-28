@@ -1,11 +1,11 @@
 import { createApp } from 'vue';
 import App from './app.vue';
 import '@easy-ui/theme-chalk/src/index.scss';
-import BrainUi from '@easy-ui/components';
+import EasyUi from '@easy-ui/components';
 
 const app = createApp(App);
-app.use(BrainUi);
+app.use(EasyUi);
 
-// app.use(BrainButton)
-// app.use(BrainButtonGroup)
+// app.use(EasyButton)
+// app.use(EasyButtonGroup)
 app.mount('#app');

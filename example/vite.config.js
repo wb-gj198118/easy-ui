@@ -9,5 +9,6 @@ export default defineConfig({
     /* https://www.npmjs.com/package/vite-plugin-eslint */
     viteEslint(),
     VueSetupExtend()
-  ]
+  ],
+  base: './'
 });

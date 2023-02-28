@@ -11,7 +11,7 @@
   </button>
 </template>
 
-<script lang="ts" setup name="BrainButton">
+<script lang="ts" setup name="EasyButton">
   import { computed } from 'vue';
   import type { ButtonPropsType } from './button';
   import { Props, Emits } from './button';

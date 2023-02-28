@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -C example dev",
+    "build": "pnpm -C example build",
     "clear": "rimraf dist",
     "clear:cache": "rimraf node_modules/.cache/ rimraf node_modules/.vite",
     "clear:lib": "rimraf node_modules",

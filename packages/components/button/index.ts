@@ -2,6 +2,6 @@ import button from './src/button.vue';
 
 import { withInstall } from '@easy-ui/utils';
 
-export const BrainButton = withInstall(button);
+export const EasyButton = withInstall(button);
 
-export default BrainButton;
+export default EasyButton;
