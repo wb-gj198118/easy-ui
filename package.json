@@ -1,0 +1,62 @@
+{
+  "name": "easy-ui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C example dev",
+    "clear": "rimraf dist",
+    "clear:cache": "rimraf node_modules/.cache/ rimraf node_modules/.vite",
+    "clear:lib": "rimraf node_modules",
+    "lint:fix": "eslint . --fix",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --write .",
+    "lint:css": "stylelint 'packages/theme-chalk/src/**/*.scss' --fix --custom-syntax postcss-scss",
+    "lint:ls-lint": "ls-lint",
+    "lint:staged": "lint-staged",
+    "reinstall": "rimraf pnpm-lock.yarm && rimraf node_modules && pnpm install",
+    "prepare": "husky install",
+    "postinstall": "npx husky install",
+    "commit": "git-cz"
+  },
+  "keywords": [],
+  "author": "GaoJian <136210555@qq.com>",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@easy-ui/eslint-config": "workspace:^0.0.1",
+    "@ls-lint/ls-lint": "^1.11.2",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.1.2",
+    "sass": "^1.58.3",
+    "stylelint": "^15.2.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-order": "^6.0.2",
+    "stylelint-scss": "^4.4.0",
+    "typescript": "^4.9.5",
+    "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "@easy-ui/components": "workspace:^1.0.0",
+    "@easy-ui/theme-chalk": "workspace:^1.0.0",
+    "@easy-ui/utils": "workspace:^1.0.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["@easy-ui/eslint-config"]
+}
